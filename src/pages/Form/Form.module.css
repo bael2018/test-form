@@ -1,0 +1,155 @@
+
+
+.form_title{
+    margin: 0px;
+    color: rgb(61, 61, 61);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.form_header{
+    margin-bottom: 30px;
+}
+
+.form_body,
+.form_header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form_header div{
+    cursor: pointer;
+    position: relative;
+}
+
+.form_header div h5{
+    margin: 0px;
+    width: 100%;
+    justify-content: center;
+    color: rgb(59, 59, 59);
+    align-items: center;
+    display: flex;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.form_header div h5 svg{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.form_header div span{
+    width: 100%;
+    background: white;
+    bottom: -220%;
+    transition: .3s;
+    z-index: 10;
+    left: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px 3px rgb(228, 228, 228);
+    position: absolute;
+    border-radius: 10px;
+}
+
+.form_header div span p{
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.form_header div,
+.form_header input{
+    width: 48%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid rgb(202, 202, 202);
+    outline: none;
+}
+
+.form_body input{
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid rgb(202, 202, 202);
+    outline: none;
+}
+
+.form_input_full{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.form_input_half{
+    width: 48%;
+    margin-bottom: 30px;
+}
+
+.form_footer{
+    display: flex;
+    justify-content: center;
+}
+
+.form_footer div{
+    width: 210px;
+}
+
+.form_footer a{
+    background: #E62B25;
+    padding: 12px 70px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    color: white;
+}
+
+.search_wrapper{
+    border-radius: 10px;
+    width: 100%;
+    position: absolute;
+    height: 150px;
+    z-index: 10;
+    bottom: -140% !important;
+    background: white;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 3px 3px rgb(228, 228, 228);
+}
+
+.search_wrapper::-webkit-scrollbar{
+    width: 10px;
+    background: none;
+}
+
+.search_wrapper::-webkit-scrollbar-thumb{
+    background: grey;
+    border-radius: 10px;
+}
+
+.search_wrapper h1{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    font-size: 22px;
+    align-items: center;
+    margin: 0px;
+    color: rgb(63, 63, 63);
+}
+
+.search_wrapper p{
+    width: 100%;
+    padding: 5px 0;
+    box-sizing: border-box;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.search_wrapper p:hover{
+    background: rgb(236, 236, 236);
+}
