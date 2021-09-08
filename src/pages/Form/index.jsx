@@ -6,6 +6,7 @@ import { searchList } from '../../helpers'
 import { useDispatch } from 'react-redux'
 import { educationAction, numberAction, qualifyAction, searchAction, seriesAction, specialAction, yearAction } from '../../actions'
 import { NavLink } from 'react-router-dom'
+import {RiSearch2Line} from 'react-icons/ri'
 
 const Form = () => {
     const dispatch = useDispatch()
@@ -123,7 +124,9 @@ const Form = () => {
                 </div>
                 <div className={cls.form_body}>
                     <div style={{width: '100%' , position: 'relative'}}>
+                        <RiSearch2Line/>
                         <input 
+                            id={cls.search_input}
                             value={searchInput}
                             onChange={e => setSearchInput(e.target.value)}
                             className={cls.form_input_full} 

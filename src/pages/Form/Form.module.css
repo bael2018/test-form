@@ -34,11 +34,12 @@
     height: 100%;
     top: 0;
     left: 0;
+    font-size: 12px;
     position: absolute;
 }
 
 .form_header div h5 svg{
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 10px;
 }
 
@@ -79,14 +80,31 @@
     outline: none;
 }
 
+.form_body div svg{
+    position: absolute;
+    z-index: 5;
+    top: 17px;
+    color: red;
+    font-size: 20px;
+    left: 15px;
+}
+
+#search_input{
+    padding-left: 50px;
+}
+
 .form_input_full{
     width: 100%;
     margin-bottom: 30px;
+    position: relative;
+    display: block;
 }
 
 .form_input_half{
     width: 48%;
     margin-bottom: 30px;
+    position: relative;
+    display: block;
 }
 
 .form_footer{
