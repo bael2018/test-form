@@ -1,8 +1,7 @@
 import { useSelector } from 'react-redux'
-import { NavLink } from 'react-router-dom'
 import cls from './Result.module.css'
 
-const Result = () => {
+const Result = ({page}) => {
     const education = useSelector(state => state.info.education)
     const year = useSelector(state => state.info.year)
     const search = useSelector(state => state.info.searchState)
@@ -48,7 +47,7 @@ const Result = () => {
                     <h3>{qualify}</h3>
                 </div>
                 <div className={cls.result_footer}>
-                    <NavLink exact to='/'>Заполнить форму</NavLink>
+                    <button onClick={() => page(prev => !prev)}>Заполнить форму</button>
                 </div>
             </div>
         </section>

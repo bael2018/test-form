@@ -7,8 +7,7 @@ const App = () => {
     return (
         <section className={cls.root}>
             <Switch>
-                <Route exact path='/' component={Form}/>
-                <Route exact path='/result' component={Result}/>
+                <Route path='/' component={Form}/>
                 <Redirect to='/'/>
             </Switch>
         </section>
