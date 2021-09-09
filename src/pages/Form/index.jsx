@@ -6,7 +6,7 @@ import { searchList } from '../../helpers'
 import { useDispatch } from 'react-redux'
 import { educationAction, numberAction, qualifyAction, searchAction, seriesAction, specialAction, yearAction } from '../../actions'
 import { NavLink } from 'react-router-dom'
-import {RiSearch2Line} from 'react-icons/ri'
+import {RiSearch2Line , RiStarSFill} from 'react-icons/ri'
 
 const Form = () => {
     const dispatch = useDispatch()
@@ -124,6 +124,7 @@ const Form = () => {
                 </div>
                 <div className={cls.form_body}>
                     <div style={{width: '100%' , position: 'relative'}}>
+                        <RiStarSFill/>
                         <RiSearch2Line/>
                         <input 
                             id={cls.search_input}
@@ -147,37 +148,57 @@ const Form = () => {
                             }
                         </div>  
                     </div>
-                    <input
-                        value={diplomSeries}
-                        onChange={e => setDiplomSeries(e.target.value)}
-                        className={cls.form_input_half} 
-                        type="number" 
-                        placeholder='Серия диплома' 
-                    />
-                    <input 
-                        value={diplomNumber}
-                        onChange={e => setDiplomNumber(e.target.value)}
-                        style={{display: inputFirst ? 'block' : 'none'}}
-                        className={cls.form_input_half} 
-                        type="number" 
-                        placeholder='Номер диплома' 
-                    />
-                    <input 
-                        value={special}
-                        onChange={e => setSpecial(e.target.value)}
-                        style={{display: inputSecond ? 'block' : 'none'}}
-                        className={cls.form_input_full} 
-                        type="text" 
-                        placeholder='Специальность по диплому' 
-                    />
-                    <input 
-                        value={qualify}
-                        onChange={e => setQualify(e.target.value)}
-                        style={{display: inputThird ? 'block' : 'none'}}
-                        className={cls.form_input_full} 
-                        type="text" 
-                        placeholder='Квалификация по диплому' 
-                    />
+                    <div className={cls.input_wrapper_half}>
+                        <RiStarSFill/>
+                        <input
+                            value={diplomSeries}
+                            onChange={e => setDiplomSeries(e.target.value)}
+                            className={cls.form_input_half} 
+                            type="number" 
+                            placeholder='Серия диплома' 
+                        />
+                    </div>
+                    <div 
+                        className={cls.input_wrapper_half}
+                        style={{
+                            display: inputFirst ? 'block' : 'none'
+                        }}>
+                        <input 
+                            value={diplomNumber}
+                            onChange={e => setDiplomNumber(e.target.value)}
+                            className={cls.form_input_half} 
+                            type="number" 
+                            placeholder='Номер диплома' 
+                        />
+                    </div>
+                    <div 
+                        className={cls.input_wrapper_full}
+                        style={{
+                            display: inputSecond ? 'block' : 'none'
+                        }}>
+                        <RiStarSFill/>
+                        <input 
+                            value={special}
+                            onChange={e => setSpecial(e.target.value)}
+                            className={cls.form_input_full} 
+                            type="text" 
+                            placeholder='Специальность по диплому' 
+                        />
+                    </div>
+                    <div 
+                        className={cls.input_wrapper_full_alt}
+                        style={{
+                            display: inputThird ? 'block' : 'none'
+                        }}>
+                        <RiStarSFill/>
+                        <input 
+                            value={qualify}
+                            onChange={e => setQualify(e.target.value)}
+                            className={cls.form_input_full} 
+                            type="text" 
+                            placeholder='Квалификация по диплому' 
+                        />
+                    </div>
                 </div>
                 <div className={cls.form_footer}>
                     <div onClick={handleForm}>

@@ -72,6 +72,10 @@
     outline: none;
 }
 
+.form_body div{
+    position: relative;
+}
+
 .form_body input{
     padding: 20px;
     box-sizing: border-box;
@@ -80,17 +84,36 @@
     outline: none;
 }
 
-.form_body div svg{
+.form_header input:hover,
+.form_body input:hover{
+    border: 1px solid #E62B25 !important;
+}
+
+.form_header input:focus,
+.form_body input:focus{
+    border: 2px solid #E62B25 !important;
+}
+
+.form_body div svg:nth-child(1){
+    position: absolute;
+    z-index: 5;
+    top: 17px;
+    color: #F99B1C;
+    font-size: 15px;
+    left: 15px;
+}
+
+.form_body div svg:nth-child(2){
     position: absolute;
     z-index: 5;
     top: 17px;
     color: red;
     font-size: 20px;
-    left: 15px;
+    left: 45px;
 }
 
 #search_input{
-    padding-left: 50px;
+    padding-left: 70px;
 }
 
 .form_input_full{
@@ -101,7 +124,7 @@
 }
 
 .form_input_half{
-    width: 48%;
+    width: 100%;
     margin-bottom: 30px;
     position: relative;
     display: block;
@@ -134,7 +157,7 @@
     position: absolute;
     height: 150px;
     z-index: 10;
-    bottom: -140% !important;
+    bottom: 12% !important;
     background: white;
     overflow-y: scroll;
     box-shadow: 0px 0px 3px 3px rgb(228, 228, 228);
@@ -170,4 +193,39 @@
 
 .search_wrapper p:hover{
     background: rgb(236, 236, 236);
+}
+
+.input_wrapper_half{
+    width: 48%;
+}
+
+.input_wrapper_full{
+    width: 100%;
+}
+
+.input_wrapper_full svg,
+.input_wrapper_half svg{
+    position: absolute !important;
+    color: #F99B1C !important;
+    font-size: 10px !important;
+    top: 22px !important;
+    left: 20px !important;
+}
+
+.input_wrapper_half input,
+.input_wrapper_full_alt input,
+.input_wrapper_full input{
+    padding-left: 35px;
+}
+
+.input_wrapper_full_alt{
+    width: 100%;
+}
+
+.input_wrapper_full_alt svg{
+    color: red !important;
+    position: absolute !important;
+    font-size: 13px !important;
+    top: 22px !important;
+    left: 20px !important;
 }
