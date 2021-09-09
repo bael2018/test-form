@@ -3,10 +3,8 @@
 .root{
     font-family: 'Montserrat', sans-serif;
     position: absolute;
-    height: 90vh;
     border-radius: 5px;
     left: 20%;
-    top: 5vh;
     padding: 30px;
     box-sizing: border-box;
     background: white;

@@ -46,8 +46,13 @@ const Result = ({page}) => {
                     <h5>Квалификация по диплому</h5>
                     <h3>{qualify}</h3>
                 </div>
+                <label className={cls.result_label}>
+                    <input checked={true} type="checkbox" />
+                    Нострификация
+                </label>
                 <div className={cls.result_footer}>
-                    <button onClick={() => page(prev => !prev)}>Заполнить форму</button>
+                    <input type="file" />
+                    <h3>Документ: <span>Скачать документ</span></h3>
                 </div>
             </div>
         </section>

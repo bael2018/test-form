@@ -42,16 +42,38 @@
 
 .result_footer{
     text-align: center;
+    position: relative;
+    width: 100%;
+    border: 1px dashed grey;
+    border-radius: 20px;
+    cursor: pointer !important;
+    margin-top: 30px;
 }
 
-.result_footer button{
-    background: #E62B25;
-    padding: 12px 70px;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 30px;
-    outline: none;
-    border: none;
-    font-size: 13px;
-    color: white;
+.result_footer input{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer !important;
+    opacity: 0;
+}
+
+.result_footer h3{
+    font-weight: 500;
+    color: red !important;
+}
+
+.result_footer h3 span{
+    color: rgb(218, 218, 218);
+    margin: 0 5px;
+}
+
+.result_label{
+    font-weight: 500;   
+}
+
+.result_label svg{
+    margin-right: 10px;
 }

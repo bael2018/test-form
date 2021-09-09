@@ -205,10 +205,31 @@ const Form = () => {
                                 />
                             </div>
                         </div>
+                        <label className={cls.form_label}>
+                            <input type="checkbox" />
+                            Нострификация
+                        </label>
+                        <label className={cls.form_document}>
+                            <input type="file" />
+                            <h3>Документ: <span>Загрузить файлы или </span> <h4>открыть проводник</h4></h3>
+                        </label>
                         <div className={cls.form_footer}>
                             <div onClick={handleForm}>
                                 Сохранить
                             </div>
+                            <div >
+                                Отмена
+                            </div>
+                        </div>
+                        <div className={cls.form_footer}>
+                            <span>
+                                <RiStarSFill style={{color: '#E62B25'}}/>
+                                Поля обязательные для заполнения
+                            </span>
+                            <span>
+                                <RiStarSFill style={{color: '#E78E24'}}/>
+                                Поля видны для всех пользователей
+                            </span>
                         </div>
                     </form>
                     </>
